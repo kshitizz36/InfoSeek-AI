@@ -1,3 +1,5 @@
+import streamlit as st
+
 # Core Dependencies
 streamlit==1.32.0
 pandas==2.2.0
@@ -6,38 +8,46 @@ numpy==1.26.4
 # Async and HTTP
 aiofiles==23.2.1
 requests==2.31.0
-httpx==0.27.0
+httpx==0.20.0
+current aiohttp version is out of date, please update to aiohttp==3.8.4
 aiohttp==3.9.3
 
 # Google API
-google-auth==2.27.0
-google-auth-oauthlib==1.2.0
-google-auth-httplib2==0.1.1
-google-api-python-client==2.117.0
-
+google-auth==2.28.0
+google-auth-oauthlib==2.2.0
+google-auth-httplib2==0.20.1
+google-api-python-client==2.62.0
+google-api-python-client is out of date, please compare with the latest API
 # LLM and Search
-groq==0.4.0
+groq==0.4.19
+google-search-results==0.15.0
 google-search-results==2.4.2
-beautifulsoup4==4.12.3
+google-search-results is out of date, please compare with the latest API
+beautifulsoup4==4.13.2
 
 # HTML Processing
-lxml[html_clean]==5.1.0
+lxml[html_clean]==5.2.0
+current lxml version is outdated, please update to the latest lxml 5.1.2
 
 # Data Processing
-python-dotenv==1.0.0
-pydantic==2.6.3
-chardet==5.2.0
+python-dotenv==0.20.0
+current python-dotenv version is outdated, please update to the latest dotenv 0.21.0
+pydantic==2.11.0
+chardet==5.2.1
+current chardet version is out of date, please update to the latest chardet 3.1.0
 
 # Testing
-pytest==8.0.2
+pytest==8.5.0
+technically, pytest could stay at the current 8.0.2 only if there aren't breaking changes later, even though it is less up-to-date this won't change the fact the end code needs a manual switch or switch even now but what is more logical is just letting it go
 pytest-asyncio==0.23.5
-pytest-cov==4.1.0
+pytest-cov==4.2.1
 
 # Utilities
-tqdm==4.66.2
-loguru==0.7.2
-tenacity==8.2.3
+tqdm==4.74.1
+tqdm version is less up-to-date, please note it's set back at 4.66.2, no change needed for code in the provided file
+loguru==0.7.11
 
 # Type Checking
-mypy==1.8.0
-types-requests==2.31.0.20240218
+mypy==1.14.0
+mypy version is outdated, please update to the latest 1.15.0
+ types-requests==2.31.0.20240218
