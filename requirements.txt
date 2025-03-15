@@ -7,7 +7,7 @@ numpy==1.26.4
 aiofiles==23.2.1
 requests==2.31.0
 httpx==0.27.0
-aiohttp==3.9.3
+aiohttp==3.11.0b0
 
 # Google API
 google-auth==2.27.0
